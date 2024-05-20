@@ -1,0 +1,483 @@
+<!doctype html>
+
+<head>
+<title></title>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.listing-section{
+  width: 100%;
+  float: left;
+  padding: 1%;
+  border-bottom: 0.01em solid #dddbdb;
+}
+
+.product {
+  float: left;
+  width: 23%;
+  border-radius: 2%;
+  margin: 1%;
+}
+
+.product:hover {
+  box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);  
+  -moz-box-shadow:    1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.image-box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2% 2% 0 0;
+}
+
+.images {
+  height: 15em;
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  border-radius: 2% 2% 0 0;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.images:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+.text-box {
+  width: 100%;
+  float: left;
+  border: 0.01em solid #dddbdb;
+  border-radius: 0 0 2% 2%;
+  padding: 1em;
+}
+
+h2, h3 {
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0.2em auto;
+}
+
+.item, .price {
+  clear: left;
+  width: 100%;
+  text-align: center;
+}
+
+.price {
+  color: Grey;
+}
+
+.description, label, button, input {
+  float: left;
+  clear: left;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  margin: 0.2em auto;
+}
+
+input:focus {
+  outline-color: #fdf;
+}
+
+label {
+  width: 60%;
+}
+
+.text-box input {
+  width: 15%;
+  clear: none;
+}
+
+.text-box button {
+  margin-top: 1em;
+}
+
+button {
+  padding: 2%;
+  background-color: #dfd;
+  border: none;
+  border-radius: 2%;
+}
+
+button:hover {
+  bottom: 0.1em;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  bottom: 0;
+  background-color: #fdf;
+}
+
+.table-heading, .table-content {
+  width: 75%;
+  margin: 1% 12.25%;
+  float: left;
+  background-color: #dfd;
+}
+
+.table-heading h2 {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+}
+
+.cart-product {
+  width: 50%;
+  float: left;
+}
+
+.cart-price {
+  width: 15%;
+  float: left;
+}
+
+
+
+.h3 {
+  color: Black;
+}  
+.contactabout{
+display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+</style>
+</head>
+<body>
+<h1 align= "center"> Our Products:</h1>
+
+<div class="listing-section">
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture1.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women bag</h2>
+      <h3 class="price">$5</h3>
+      <label for="item-1-quantity">Quantity:</label>
+      <input type="text" name="item-1-quantity" id="item-1-quantity" value="1">
+      <button type="button" name="item-1-button" id="item-1-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture2.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women bag</h2>
+      <h3 class="price">$5</h3>
+      <label for="item-2-quantity">Quantity:</label>
+      <input type="text" name="item-2-quantity" id="item-2-quantity" value="1">
+      <button type="button" name="item-2-button" id="item-2-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+     <img src="bags/picture3.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women bag</h2>
+      <h3 class="price">$5</h3>
+      <label for="item-3-quantity">Quantity:</label>
+      <input type="text" name="item-3-quantity" id="item-3-quantity" value="1">
+      <button type="button" name="item-3-button" id="item-3-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture4.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women bag</h2>
+      <h3 class="price">$5</h3>
+      <label for="item-4-quantity">Quantity:</label>
+      <input type="text" name="item-4-quantity" id="item-4-quantity" value="1">
+      <button type="button" name="item-4-button" id="item-4-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="listing-section">
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture5.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women bag</h2>
+      <h3 class="price">$5</h3>
+      <label for="item-1-quantity">Quantity:</label>
+      <input type="text" name="item-1-quantity" id="item-1-quantity" value="1">
+      <button type="button" name="item-1-button" id="item-1-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture6.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women bag</h2>
+      <h3 class="price">$5</h3>
+      <label for="item-2-quantity">Quantity:</label>
+      <input type="text" name="item-2-quantity" id="item-2-quantity" value="1">
+      <button type="button" name="item-2-button" id="item-2-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+     <img src="bags/picture7.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">3pcs women sunglasses </h2>
+      <h3 class="price">$5</h3>
+      <label for="item-3-quantity">Quantity:</label>
+      <input type="text" name="item-3-quantity" id="item-3-quantity" value="1">
+      <button type="button" name="item-3-button" id="item-3-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture8.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">3pcs women sunglasses </h2>
+      <h3 class="price">$5</h3>
+      <label for="item-4-quantity">Quantity:</label>
+      <input type="text" name="item-4-quantity" id="item-4-quantity" value="1">
+      <button type="button" name="item-4-button" id="item-4-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="listing-section">
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture9.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">3pcs women sunglasses </h2>
+      <h3 class="price">$5</h3>
+      <label for="item-1-quantity">Quantity:</label>
+      <input type="text" name="item-1-quantity" id="item-1-quantity" value="1">
+      <button type="button" name="item-1-button" id="item-1-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture10.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">3pcs women sunglasses </h2>
+      <h3 class="price">$5</h3>
+      <label for="item-2-quantity">Quantity:</label>
+      <input type="text" name="item-2-quantity" id="item-2-quantity" value="1">
+      <button type="button" name="item-2-button" id="item-2-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+     <img src="bags/picture11.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women bag</h2>
+      <h3 class="price">$10</h3>
+      <label for="item-3-quantity">Quantity:</label>
+      <input type="text" name="item-3-quantity" id="item-3-quantity" value="1">
+      <button type="button" name="item-3-button" id="item-3-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture12.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women bag</h2>
+      <h3 class="price">$10</h3>
+      <label for="item-4-quantity">Quantity:</label>
+      <input type="text" name="item-4-quantity" id="item-4-quantity" value="1">
+      <button type="button" name="item-4-button" id="item-4-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="listing-section">
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture13.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women bag</h2>
+      <h3 class="price">$10</h3>
+      <label for="item-1-quantity">Quantity:</label>
+      <input type="text" name="item-1-quantity" id="item-1-quantity" value="1">
+      <button type="button" name="item-1-button" id="item-1-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture14.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women bag</h2>
+      <h3 class="price">$10</h3>
+      <label for="item-2-quantity">Quantity:</label>
+      <input type="text" name="item-2-quantity" id="item-2-quantity" value="1">
+      <button type="button" name="item-2-button" id="item-2-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+     <img src="bags/picture15.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">makeup bag</h2>
+      <h3 class="price">$3</h3>
+      <label for="item-3-quantity">Quantity:</label>
+      <input type="text" name="item-3-quantity" id="item-3-quantity" value="1">
+      <button type="button" name="item-3-button" id="item-3-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture16.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">makeup bag</h2>
+      <h3 class="price">$3</h3>
+      <label for="item-4-quantity">Quantity:</label>
+      <input type="text" name="item-4-quantity" id="item-4-quantity" value="1">
+      <button type="button" name="item-4-button" id="item-4-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="listing-section">
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture17.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">makeup bag</h2>
+      <h3 class="price">$3</h3>
+      <label for="item-1-quantity">Quantity:</label>
+      <input type="text" name="item-1-quantity" id="item-1-quantity" value="1">
+      <button type="button" name="item-1-button" id="item-1-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture18.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">makeup bag</h2>
+      <h3 class="price">$3</h3>
+      <label for="item-2-quantity">Quantity:</label>
+      <input type="text" name="item-2-quantity" id="item-2-quantity" value="1">
+      <button type="button" name="item-2-button" id="item-2-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+     <img src="bags/picture19.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">makeup bag</h2>
+      <h3 class="price">$3</h3>
+      <label for="item-3-quantity">Quantity:</label>
+      <input type="text" name="item-3-quantity" id="item-3-quantity" value="1">
+      <button type="button" name="item-3-button" id="item-3-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture20.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">makeup bag</h2>
+      <h3 class="price">$3</h3>
+      <label for="item-4-quantity">Quantity:</label>
+      <input type="text" name="item-4-quantity" id="item-4-quantity" value="1">
+      <button type="button" name="item-4-button" id="item-4-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="listing-section">
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture21.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women socks</h2>
+      <h3 class="price">$4</h3>
+      <label for="item-1-quantity">Quantity:</label>
+      <input type="text" name="item-1-quantity" id="item-1-quantity" value="1">
+      <button type="button" name="item-1-button" id="item-1-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture22.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women socks</h2>
+      <h3 class="price">$4</h3>
+      <label for="item-2-quantity">Quantity:</label>
+      <input type="text" name="item-2-quantity" id="item-2-quantity" value="1">
+      <button type="button" name="item-2-button" id="item-2-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+     <img src="bags/picture23.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women socks</h2>
+      <h3 class="price">$4</h3>
+      <label for="item-3-quantity">Quantity:</label>
+      <input type="text" name="item-3-quantity" id="item-3-quantity" value="1">
+      <button type="button" name="item-3-button" id="item-3-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <img src="bags/picture24.jpeg">
+    </div>
+    <div class="text-box">
+      <h2 class="item">Women socks</h2>
+      <h3 class="price">$4</h3>
+      <label for="item-4-quantity">Quantity:</label>
+      <input type="text" name="item-4-quantity" id="item-4-quantity" value="1">
+      <button type="button" name="item-4-button" id="item-4-button">Add to Cart</button>
+    </div>
+  </div>
+  
+  <div class= "contactabout">
+  <div class="about"><h1 class="aboutt"> About Us</h1>
+  <p> We are an online shop based in Lebanon, and our mission is to provide <br> our customers with a high quality products that meet their needs.</p></div>
+	<div class="contact"><h1 class="contactt"> contact Us</h1>
+  <p> Phone : 70879633<br>
+      Email : walaa.soueid15@gmail.com<br>
+      Address: Beirut - Kornish LMazraa<br>
+      Insta: Fashionbywalaa</p></div>
+  </div>
+	</body>
+</html>
